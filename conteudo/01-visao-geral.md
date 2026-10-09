@@ -30,5 +30,5 @@ A plataforma é a **ponte entre artistas independentes e investidores**, permiti
 | Nome | Formação | Foto |
 |---|---|---|
 | Antônio Meneghetti | Estudante de Design de Produto — PUCRS | `imagens/equipe-antonio-meneghetti.jpg` |
-| Juliano Lentz | Estudante de Psicologia — PUCRS | `imagens/equipe-juliano-lentz.jpg` |
+| Juliano Ernandorena | Estudante de Psicologia — PUCRS | `imagens/equipe-juliano-ernandorena.jpg` |
 | Leonardo Kalil | Estudante de Arquitetura — PUCRS | `imagens/equipe-leonardo-kalil.jpg` |
