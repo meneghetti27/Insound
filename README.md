@@ -10,7 +10,7 @@ Site da Insound, com cara de startup: muito movimento, animação e impacto.
 
 ## Status
 
-1. [ ] Coletar conteúdo (PDFs, Canva, infos)
+1. [x] Coletar conteúdo (Plano de Negócios + Testes recebidos)
 2. [ ] Coletar referências visuais
 3. [ ] Definir estrutura de seções
 4. [ ] Construir o site
