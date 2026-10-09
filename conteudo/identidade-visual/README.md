@@ -7,7 +7,7 @@ Amor à música · Segurança · Diversidade · Oportunidade · Comunidade
 Jovem, mas que transmita **segurança** e **música**. **Não usar cores ligadas diretamente a dinheiro** (nada de verde-cifrão). O foco é vender a oportunidade de ajudar um artista querido **e** de ter retorno financeiro alto em pouco tempo.
 
 ## Logo
-Wordmark **InSound** + complemento **Invest**. O ícone é um disco/vinil com um "olho" no centro, numa forma circular aberta (lembra um "C"/onda sonora).
+Wordmark **InSound** + complemento **Invest**. A capa da Apresentação de Conceitos usa a versão branca em caixa alta estendida sobre laranja. O ícone é um disco/vinil com um "olho" no centro, numa forma circular aberta (lembra um "C"/onda sonora).
 
 Versões encontradas nos testes (`testes.pdf`):
 
@@ -24,7 +24,17 @@ Versões encontradas nos testes (`testes.pdf`):
 
 > ⚠️ Ainda precisamos do **logo final em vetor (SVG/PNG transparente)**.
 
-## Cores (extraídas dos PDFs)
+## Cores — DECIDIDO
+**Só laranja, branco e preto.** Nada de azul.
+
+| Nome | Hex | Uso |
+|---|---|---|
+| Laranja InSound | `#FE9117` | Cor principal |
+| Laranja profundo | `#F46D05` | Gradientes, destaque |
+| Branco | `#FFFFFF` | Fundos claros, texto sobre escuro |
+| Preto quente | `#0B0907` | Fundos escuros, texto |
+
+### Paleta original dos testes (referência, não usar azul)
 
 | Nome | Hex | Uso |
 |---|---|---|

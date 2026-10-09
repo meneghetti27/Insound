@@ -12,6 +12,7 @@ Tudo que foi recebido está organizado aqui, já pronto pra virar seções do si
 | [06-marketing.md](06-marketing.md) | Estratégias de marketing e canais |
 | [07-desafios-e-futuro.md](07-desafios-e-futuro.md) | Desafios, ideias futuras |
 | [identidade-visual/](identidade-visual/README.md) | Logo, cores, valores, tom de voz |
+| [08-apresentacao-de-conceitos.md](08-apresentacao-de-conceitos.md) | Tagline, motivações, moodboard, referências |
 | [mapa-do-site.md](mapa-do-site.md) | Proposta de estrutura das seções do site |
 | [pendencias.md](pendencias.md) | O que ainda falta / pontos a decidir |
 
@@ -19,3 +20,4 @@ Tudo que foi recebido está organizado aqui, já pronto pra virar seções do si
 
 - `plano-de-negocios.pdf` — Plano de Negócios InSound (19 págs.)
 - `testes.pdf` — InSound TESTES: testes de logo + apresentação completa (55 págs.)
+- `apresentacao-de-conceitos.pdf` — Apresentação de Conceitos 2025 (19 págs.)

@@ -1,16 +1,27 @@
-# Insound — Site
+# InSound — Site
 
-Site da Insound, com cara de startup: muito movimento, animação e impacto.
+Site da InSound Invest: *o seu primeiro contato com investimento musical.*
+
+## Rodar localmente
+
+Site estático (HTML + CSS + JS), sem build:
+
+```bash
+python3 -m http.server 8000
+# abre http://localhost:8000
+```
+
+Dá pra publicar direto no GitHub Pages, Netlify ou Vercel.
 
 ## Estrutura
 
-- `conteudo/` — todo o conteúdo do site (textos, seções, infos), organizado em Markdown
-  - `brutos/` — material original recebido (PDFs, exports do Canva, imagens)
-- `referencias/` — sites e materiais de referência visual
+- `index.html`: a página
+- `assets/css/style.css`: estilos (tokens de cor e tipografia no topo)
+- `assets/js/main.js`: animações (GSAP + ScrollTrigger, Lenis para scroll suave), formulário, abas
+- `assets/img/`: fotos da equipe
+- `conteudo/`: todo o conteúdo de origem, organizado em Markdown (ver `conteudo/README.md`)
+- `conteudo/pendencias.md`: o que falta decidir
 
-## Status
+## Formulário da lista de espera
 
-1. [x] Coletar conteúdo (Plano de Negócios + Testes recebidos)
-2. [ ] Coletar referências visuais
-3. [ ] Definir estrutura de seções
-4. [ ] Construir o site
+Ainda não conectado. Para ligar, coloque a URL que recebe um POST JSON (`perfil`, `nome`, `email`) em `data-endpoint` no `<form id="form-lista">`.

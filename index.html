@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>InSound Invest</title>
+<meta name="description" content="InSound: o seu primeiro contato com investimento musical. Invista em artistas independentes e receba parte dos royalties das músicas.">
+<meta name="theme-color" content="#0B0907">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Manrope:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--BODY-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 64 64">
+    <path d="M57.6 27.5A26 26 0 1 1 36.5 6.4" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+    <path d="M46.1 26.9A15 15 0 1 1 29.4 17.2" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    <path d="M51 13 41.5 22.5" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="31" cy="33" r="7.5" fill="currentColor"/>
+    <circle cx="28" cy="30" r="2.6" fill="var(--mark-hole, #0B0907)"/>
+  </symbol>
+</svg>
+
+<div class="cursor" aria-hidden="true"></div>
+
+<header class="nav" id="topo">
+  <a class="brand" href="#inicio" aria-label="InSound, início">
+    <svg class="brand__mark"><use href="#mark"/></svg>
+    <span class="brand__word">InSound</span>
+  </a>
+  <nav class="nav__links" aria-label="Seções">
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#artistas">Artistas</a>
+    <a href="#quem-somos">Quem somos</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn--sm magnetic" href="#lista">Lista de espera</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <svg class="hero__ring" aria-hidden="true"><use href="#mark"/></svg>
+    <canvas class="hero__wave" aria-hidden="true"></canvas>
+
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="dot"></span> Startup brasileira · fundada em 2025</p>
+      <h1 class="hero__title">
+        <span class="line"><span class="w">Invista</span> <span class="w">na</span></span>
+        <span class="line"><span class="w accent">música.</span></span>
+      </h1>
+      <p class="hero__lead">O seu primeiro contato com investimento musical. Compre uma parte dos royalties de artistas independentes, ajude a carreira deles decolar e ganhe junto a cada play.</p>
+      <div class="hero__ctas">
+        <a class="btn magnetic" href="#lista" data-role="investidor">Quero investir <span aria-hidden="true">↗</span></a>
+        <a class="btn btn--ghost magnetic" href="#lista" data-role="artista">Sou artista</a>
+      </div>
+    </div>
+
+    <div class="hero__device" aria-label="Prévia do app InSound com artistas de exemplo">
+      <div class="phone">
+        <div class="phone__notch"></div>
+        <div class="phone__head">
+          <span class="phone__hello">Em alta hoje</span>
+          <span class="tag">exemplo</span>
+        </div>
+        <article class="artist">
+          <div class="artist__cover artist__cover--a"><span>LV</span></div>
+          <div class="artist__info">
+            <strong>Lua Vieira</strong>
+            <small>Trap · Porto Alegre</small>
+          </div>
+          <span class="artist__up">▲ 38%</span>
+        </article>
+        <svg class="spark" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FE9117" stop-opacity=".45"/><stop offset="1" stop-color="#FE9117" stop-opacity="0"/></linearGradient></defs>
+          <path class="spark__area" d="M0 52 L20 48 L40 50 L60 41 L80 43 L100 33 L120 35 L140 24 L160 20 L180 12 L200 6 L200 60 L0 60Z" fill="url(#sg)"/>
+          <path class="spark__line" d="M0 52 L20 48 L40 50 L60 41 L80 43 L100 33 L120 35 L140 24 L160 20 L180 12 L200 6" fill="none" stroke="#FE9117" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="200" cy="6" r="4" fill="#FE9117"/>
+        </svg>
+        <div class="phone__stats">
+          <div><small>ouvintes/mês</small><strong class="mono" data-count="184000">184.000</strong></div>
+          <div><small>faixas</small><strong class="mono">12</strong></div>
+        </div>
+        <button class="phone__cta" type="button" tabindex="-1">Investir na Lua</button>
+        <article class="artist artist--mini">
+          <div class="artist__cover artist__cover--b"><span>DR</span></div>
+          <div class="artist__info"><strong>Dupla Raiz</strong><small>Sertanejo · Goiânia</small></div>
+          <span class="artist__up">▲ 21%</span>
+        </article>
+        <article class="artist artist--mini">
+          <div class="artist__cover artist__cover--c"><span>KZ</span></div>
+          <div class="artist__info"><strong>Kaiz</strong><small>Rap · Recife</small></div>
+          <span class="artist__up">▲ 54%</span>
+        </article>
+      </div>
+      <div class="float float--1"><span class="mono">+1 play</span></div>
+      <div class="float float--2">✦ royalties a cada stream</div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Trap</span><i>✦</i><span>Sertanejo</span><i>✦</i><span>Pop</span><i>✦</i><span>Funk</span><i>✦</i><span>MPB</span><i>✦</i><span>Rap</span><i>✦</i><span>Indie</span><i>✦</i><span>Pagode</span><i>✦</i>
+      <span>Trap</span><i>✦</i><span>Sertanejo</span><i>✦</i><span>Pop</span><i>✦</i><span>Funk</span><i>✦</i><span>MPB</span><i>✦</i><span>Rap</span><i>✦</i><span>Indie</span><i>✦</i><span>Pagode</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto">
+    <p class="manifesto__text" data-scrub>Quem nunca quis investir no seu artista independente favorito? Até hoje não existia um lugar pra isso. A InSound abre o mercado de royalties pro grande público.</p>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="gap" id="problema">
+    <div class="section-head">
+      <p class="kicker">O que falta no mercado</p>
+      <h2 class="h2">Dois lados que ainda não se encontram.</h2>
+    </div>
+    <div class="gap__grid">
+      <article class="pain reveal">
+        <span class="pain__who">Pro fã e investidor</span>
+        <h3>Não tem onde investir em música.</h3>
+        <p>Você descobre artistas antes de todo mundo e vê eles estourarem. Mas não existe nenhum lugar onde dá pra apostar neles e ganhar junto.</p>
+      </article>
+      <article class="pain reveal">
+        <span class="pain__who">Pro artista</span>
+        <h3>A carreira começa sem estrutura.</h3>
+        <p>Produção, clipe, divulgação: no começo, todo o custo fica com o artista. As alternativas são gravadoras e empresários que ficam com uma fatia enorme.</p>
+      </article>
+      <article class="stat reveal">
+        <strong class="stat__num"><span data-count="656">656</span>%</strong>
+        <p>foi o aumento no número de músicas de artistas brasileiros no Spotify.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how" id="como-funciona">
+    <div class="how__pin">
+      <div class="how__intro">
+        <p class="kicker">Como funciona</p>
+        <h2 class="h2">Do primeiro play ao seu retorno.</h2>
+        <p class="muted">A InSound faz a ponte entre artistas independentes e quem quer investir neles, com contrato e prazo definidos.</p>
+      </div>
+      <ol class="how__track">
+        <li class="step">
+          <span class="step__n">01</span>
+          <h3>O artista entra</h3>
+          <p>Analisamos os números reais do artista: royalties atuais, streams e ritmo de crescimento, com dados de distribuidoras como a ONErpm.</p>
+          <div class="step__viz viz-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </li>
+        <li class="step">
+          <span class="step__n">02</span>
+          <h3>Vai pro catálogo</h3>
+          <p>Você navega por artistas com suas músicas, números e dados de crescimento. Tudo aberto pra você decidir.</p>
+          <div class="step__viz viz-cards" aria-hidden="true"><i></i><i></i><i></i></div>
+        </li>
+        <li class="step">
+          <span class="step__n">03</span>
+          <h3>Você investe</h3>
+          <p>Você compra uma pequena porcentagem dos royalties do artista, por um período pré-definido. O artista recebe o investimento de uma vez só.</p>
+          <div class="step__viz viz-split" aria-hidden="true"><svg viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.9" fill="none" stroke="currentColor" stroke-opacity=".2" stroke-width="6"/><circle class="pie" cx="21" cy="21" r="15.9" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="18 82" stroke-dashoffset="25"/></svg></div>
+        </li>
+        <li class="step">
+          <span class="step__n">04</span>
+          <h3>A música toca, você ganha</h3>
+          <p>A cada stream, parte dos royalties vai pra você. Se o artista cresce, seu retorno cresce junto.</p>
+          <div class="step__viz viz-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- DOIS LADOS -->
+  <section class="sides" id="artistas">
+    <div class="section-head">
+      <p class="kicker">Pra quem é</p>
+      <h2 class="h2">Escolha o seu lado.</h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Público">
+      <button class="tab is-active" role="tab" id="tab-artista" aria-selected="true" aria-controls="painel-artista">Sou artista</button>
+      <button class="tab" role="tab" id="tab-investidor" aria-selected="false" aria-controls="painel-investidor">Quero investir</button>
+      <span class="tabs__pill" aria-hidden="true"></span>
+    </div>
+
+    <div class="panel" id="painel-artista" role="tabpanel" aria-labelledby="tab-artista">
+      <div class="panel__lead">
+        <h3>Grana pra começar. Sem entregar a carreira.</h3>
+        <p>Pra músicos, cantores, produtores e bandas em início de carreira que querem lançar e promover o próprio trabalho sem depender de gravadora.</p>
+        <a class="btn magnetic" href="#lista" data-role="artista">Quero entrar como artista</a>
+      </div>
+      <ul class="perks">
+        <li><b>Investimento antecipado</b><span>Receba de uma vez e use em produção, clipe, marketing e distribuição.</span></li>
+        <li><b>Uma fatia muito menor</b><span>Você vende uma pequena porcentagem, por tempo definido. Bem menos que um empresário ou gravadora tradicional.</span></li>
+        <li><b>Valor justo</b><span>A estimativa leva em conta o seu crescimento, não só o que você ganha hoje.</span></li>
+        <li><b>Fãs que viram sócios</b><span>Quem investe em você vira seu maior divulgador.</span></li>
+      </ul>
+    </div>
+
+    <div class="panel" id="painel-investidor" role="tabpanel" aria-labelledby="tab-investidor" hidden>
+      <div class="panel__lead">
+        <h3>Aposte em quem você já escuta.</h3>
+        <p>Pra quem quer diversificar com um ativo diferente, e pra fã que quer apoiar seus artistas favoritos e ter retorno ao mesmo tempo.</p>
+        <a class="btn magnetic" href="#lista" data-role="investidor">Quero investir</a>
+      </div>
+      <ul class="perks">
+        <li><b>Comece com pouco</b><span>Invista valores pequenos e receba participação nos royalties do artista.</span></li>
+        <li><b>Um ativo novo</b><span>Royalties musicais: um investimento alternativo, ligado ao crescimento real do artista.</span></li>
+        <li><b>Dados abertos</b><span>Músicas, números e crescimento de cada artista antes de você decidir.</span></li>
+        <li><b>Faça parte da história</b><span>Seu investimento ajuda o artista a chegar mais longe.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONFIANÇA -->
+  <section class="trust">
+    <div class="section-head">
+      <p class="kicker">Segurança</p>
+      <h2 class="h2">Música é paixão. Investimento é coisa séria.</h2>
+    </div>
+    <div class="trust__grid">
+      <article class="reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h36M10 34V22m8 12V14m8 20V18m8 16V8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Análise financeira</h3>
+        <p>Um analista projeta cenários de receita pra que o valor seja justo pros dois lados.</p>
+      </article>
+      <article class="reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 8 11v12c0 10 7 17 16 20 9-3 16-10 16-20V11L24 5Z M17 24l5 5 9-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <h3>Jurídico especializado</h3>
+        <p>Contratos feitos com assessoria em direitos autorais e no setor musical. Todo mundo sabe o que assinou.</p>
+      </article>
+      <article class="reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h18l8 8v28H12V6Zm18 0v8h8M18 24h14M18 31h14M18 38h8" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <h3>Relatórios transparentes</h3>
+        <p>Acompanhe relatórios e métricas de desempenho de cada artista em que você investiu.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- QUEM SOMOS -->
+  <section class="about" id="quem-somos">
+    <svg class="about__ring" aria-hidden="true"><use href="#mark"/></svg>
+    <div class="about__top">
+      <p class="kicker kicker--dark">Quem somos</p>
+      <blockquote class="about__quote">“Nosso grande movimento é ajudar artistas emergentes enquanto damos ao público um lugar onde é possível investir em música.”</blockquote>
+    </div>
+    <div class="about__motives">
+      <article><h3>Paixão pela música</h3><p>Somos três amigos viciados em descobrir artistas novos. Várias vezes tivemos certeza de que alguém ia estourar, e a vontade de fazer parte disso.</p></article>
+      <article><h3>Um mercado vazio</h3><p>Nenhuma plataforma oferece um jeito fácil de comprar royalties de artistas independentes.</p></article>
+      <article><h3>Oportunidade real</h3><p>Dar ao artista um incentivo no começo da jornada, pra manter os custos básicos e se dedicar à música.</p></article>
+    </div>
+    <div class="team">
+      <figure class="member">
+        <img src="assets/img/equipe-juliano.jpg" alt="Juliano Ernandorena" width="480" height="480" loading="lazy">
+        <figcaption><strong>Juliano Ernandorena</strong><span>Psicologia · PUCRS</span></figcaption>
+      </figure>
+      <figure class="member">
+        <img src="assets/img/equipe-antonio.jpg" alt="Antônio Meneghetti" width="480" height="480" loading="lazy">
+        <figcaption><strong>Antônio Meneghetti</strong><span>Design de Produto · PUCRS</span></figcaption>
+      </figure>
+      <figure class="member">
+        <img src="assets/img/equipe-leonardo.jpg" alt="Leonardo Kalil" width="480" height="480" loading="lazy">
+        <figcaption><strong>Leonardo Kalil</strong><span>Arquitetura · PUCRS</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <p class="kicker">Perguntas frequentes</p>
+      <h2 class="h2">Ficou alguma dúvida?</h2>
+    </div>
+    <div class="faq__list">
+      <details>
+        <summary>O que exatamente eu compro?</summary>
+        <p>Uma pequena porcentagem dos royalties de um artista, por um período definido em contrato. Enquanto o contrato valer, parte do que as músicas rendem vai pra você.</p>
+      </details>
+      <details>
+        <summary>Preciso entender de investimento?</summary>
+        <p>Não. A plataforma é feita pra quem está dando o primeiro passo, com os dados de cada artista explicados de um jeito simples.</p>
+      </details>
+      <details>
+        <summary>Tem risco?</summary>
+        <p>Tem. É um investimento de risco: o artista pode não crescer como o esperado, e o retorno depende de quanto as músicas rendem. Invista só o que fizer sentido pra você.</p>
+      </details>
+      <details>
+        <summary>Sou artista. Perco os direitos das minhas músicas?</summary>
+        <p>Não. Você vende só uma porcentagem dos royalties, por tempo limitado. As músicas continuam suas.</p>
+      </details>
+      <details>
+        <summary>Quando a InSound lança?</summary>
+        <p>Estamos construindo a plataforma agora. Entra na lista de espera e você fica sabendo primeiro.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- LISTA DE ESPERA -->
+  <section class="join" id="lista">
+    <div class="join__copy">
+      <h2 class="join__title">Entra antes<br>do drop.</h2>
+      <p>Seja dos primeiros a investir, ou a lançar sua carreira com a InSound.</p>
+    </div>
+    <form class="form" id="form-lista" data-endpoint="" novalidate>
+      <fieldset class="form__roles">
+        <legend>Eu sou</legend>
+        <label><input type="radio" name="perfil" id="perfil-investidor" value="investidor" checked><span>Investidor</span></label>
+        <label><input type="radio" name="perfil" id="perfil-fa" value="fa"><span>Fã de música</span></label>
+        <label><input type="radio" name="perfil" id="perfil-artista" value="artista"><span>Artista</span></label>
+      </fieldset>
+      <label class="field" for="nome"><span>Nome</span><input id="nome" name="nome" autocomplete="name" required placeholder="Como te chamam"></label>
+      <label class="field" for="email"><span>E-mail</span><input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></label>
+      <button class="btn btn--light magnetic" type="submit">Entrar na lista <span aria-hidden="true">↗</span></button>
+      <p class="form__msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__big" aria-hidden="true">InSound</div>
+  <div class="footer__row">
+    <span>© 2026 InSound Invest · Porto Alegre, Brasil</span>
+    <span>Investir em royalties musicais envolve risco. O retorno depende do desempenho das músicas.</span>
+  </div>
+</footer>
+<!--/BODY-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
